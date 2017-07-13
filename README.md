@@ -57,6 +57,7 @@ Compiling the generator on CentOS6
 ================================
 
 You need:
+ - install centos-release-scl centos-release-scl-rh
  - llvm-static llvm-libs llvm-devel llvm cmake clang clang-devel devtoolset-3-gcc-c++ devtoolset-3-gcc
  - The clang libraries version 3.4 or later
 
