@@ -53,6 +53,19 @@ cmake . -DLLVM_CONFIG_EXECUTABLE=/opt/llvm/bin/llvm-config -DCMAKE_BUILD_TYPE=Re
 make
 ```
 
+Compiling the generator on CentOS6
+================================
+
+You need:
+ - llvm-static llvm-libs llvm-devel llvm cmake clang clang-devel devtoolset-3-gcc-c++ devtoolset-3-gcc
+ - The clang libraries version 3.4 or later
+
+Example:
+```bash
+cmake .  -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=/opt/rh/devtoolset-3/root/usr/bin/c++ -DCMAKE_C_COMPILER=/opt/rh/devtoolset-3/root/usr/bin/gcc 
+make
+```
+
 Compiling the generator on OS X
 ==============================================
 
